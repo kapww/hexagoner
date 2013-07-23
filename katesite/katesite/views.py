@@ -12,3 +12,8 @@ def home(request):
     template = loader.get_template('base.html')
     context = Context()
     return HttpResponse(template.render(context))
+    
+def resume(request):
+    template = loader.get_template('resume.html')
+    context = Context()
+    return HttpResponse(template.render(context))
